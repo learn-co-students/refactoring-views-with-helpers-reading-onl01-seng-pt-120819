@@ -1,2 +1,14 @@
+
+<% title @post.title %>
+<!-- using an application helper and stored it in the application.html.erb in layouts line 4 to show the title of every page -->
+
 <h1><%= @post.title %></h1>
+
+<!--<p><%= @post.updated_at.strftime("Last updated %A, %b, %e, at %l:%M %p") %></p>
+
+this is from the posts_helpers.rb
+-->
+
+<p><%= last_updated @post %></p>
+
 <p><%= @post.description %></p>
